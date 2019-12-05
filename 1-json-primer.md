@@ -10,10 +10,15 @@ into an *unstructured object* (aka *dynamic object*)
 in a variety of programming languages.
 
 > These operations are straightforward
-> in languages like
+> in dynamically typed languages like
 > Python, Ruby, and JavaScript,
-> and harder in languages
-> like **Java**, **C#**, or **Go**.
+> and harder in statically typed languages,
+> such as **Java**, **C#**, and **Go**.
+>
+> We suggest using ad hoc dynamic objects for this interview,
+> even in statically typed languages.
+> However, if you prefer to declare classes to represent data,
+> go ahead.
 
 Given this JSON *text*:
 
@@ -44,7 +49,8 @@ data["foo"]["bar"][1]["nato"]
 
 namely the string value `"papa"`.
 
-We'll also **add** a new object as a subobject of `data`:
+We'll also **construct** a new compound object
+and **add** it as a subobject of `data`:
 
 ```js
 data["foo"]["quux"] = {"stuff": "nonsense", "nums": [2.718, 3.142]}
