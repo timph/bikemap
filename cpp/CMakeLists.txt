@@ -2,8 +2,10 @@ cmake_minimum_required(VERSION 3.13)
 project(cpp-bikemap)
 
 # You can change the complier version here
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
+# If C++17 is not available, the version will decay to the most recent available
+# Uncomment below to treat the CMAKE_CXX_STANDARD setting as a hard requirement.
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Boost)
 if(Boost_FOUND)
