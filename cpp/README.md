@@ -6,8 +6,19 @@ A couple tips specifically if you're solving this problem using C++:
 
 We recommend you use [nlohmann's json library][nlohmann/json] and
 [cpr][whoshuu/cpr] for implementation. We've added both libraries to
-this project, and included a `Makefile` that will build them in, as well
-as enabling debug symbols and C++11 (C++17 if supported).
+this project, and included a `CMakeLists.txt` that will build them
+(using C++17 if supported). If you don't have a preferred CMake workflow,
+you can use this:
+
+```bash
+# Generate the project scaffolding into cpp/build/
+cd cpp
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+
+# Build the project
+cmake --build build
+```
+
 You'll need to have [libcurl](https://curl.haxx.se/download.html)
 installed - we'll link it automatically.
 
