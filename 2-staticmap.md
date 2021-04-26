@@ -35,21 +35,22 @@ send a request to `staticmap`.
 
 Using Curl's descriptive option names:
 
-* `--silent`: disable Curl's progress bar.
 * `--request POST`: send the `POST` HTTP verb.
 * `--data-binary "@staticmap_example.json"`:
   read the *contents* of the file `staticmap_example.json`
-  and use that as the request's body.
+  and use that data as the request's body.
 * `--output example.png`: save the response body
   to the file `example.png`.
 
 ```bash
-curl --silent \
-     --request POST \
+curl --request POST \
      --data-binary "@staticmap_example.json" \
      https://stripe-bikemap.appspot.com/map.png \
      --output example.png
 ```
+
+Be sure to sure to run `curl` from the directory where `staticmap_example.json` is located
+(the root of this repo).
 
 If you're using [PowerShell Core] on Windows (or Mac or Linux):
 
