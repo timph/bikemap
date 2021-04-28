@@ -94,3 +94,15 @@ in subdirectories of this repo.
 * [JavaScript](./javascript/README.md)
 * [Python](./python/README.md)
 * [Ruby](./ruby/README.md)
+* [Scala](./scala/README.md)
+
+## Other Languages
+
+* Clojure: Use [data.json]
+* Common Lisp: Use [cl-json]
+* Kotlin: See [Java](./java/README.md)
+* PHP: use [php-json]
+
+[data.json]: http://clojure.github.io/data.json/
+[cl-json]: https://common-lisp.net/project/cl-json/cl-json.html
+[php-json]: https://www.php.net/manual/en/book.json.php
