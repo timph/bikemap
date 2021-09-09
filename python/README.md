@@ -13,4 +13,4 @@ To run this code:
 
 [json]: https://docs.python.org/3/library/json.html
 [JSON Primer]: ../1-json-primer.md
-[requests]: https://python-requests.org//en/master/
+[requests]: https://docs.python-requests.org/en/master/
