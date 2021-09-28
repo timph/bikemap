@@ -5,7 +5,7 @@ A couple tips specifically if you're solving this problem using C++:
 ## Libraries
 
 We recommend you use [nlohmann's json library][nlohmann/json] and
-[cpr][whoshuu/cpr] for implementation. We've added both libraries to
+[cpr][libcpr/cpr] for implementation. We've added both libraries to
 this project, and included a `CMakeLists.txt` that will build them
 (using C++17 if supported). If you don't have a preferred CMake workflow,
 you can use this:
@@ -45,7 +45,7 @@ an overloaded constructor which can take a `std::string`, instead of
 only accepting a list of key/value pairs.
 
 [nlohmann/json]: https://github.com/nlohmann/json
-[whoshuu/cpr]: https://whoshuu.github.io/cpr/
+[libcpr/cpr]: https://docs.libcpr.org/
 
 ## Library Installation Instructions
 
