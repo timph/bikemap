@@ -4,7 +4,8 @@
   in both Node.js and in modern browsers to manipulate JSON.
 * See [nato.js](./nato.js) for an implementation of the JSON handling
   described in the [JSON Primer].
-* Use [request] or [node-fetch] for HTTP.
+* Use [node-fetch] or [axios] for HTTP.
+  * **Note**: `node-fetch@>=3` requires using ESM modules. If you are unfamiliar with ESM, use `node-fetch@2`.
 
 To run this code with [Node.js]:
 
@@ -17,3 +18,4 @@ To run this code with [Node.js]:
 [request]: https://github.com/request/request
 [node-fetch]: https://github.com/bitinn/node-fetch
 [Node.js]: https://nodejs.org/
+[axios]: https://github.com/axios/axios
