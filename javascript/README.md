@@ -2,7 +2,7 @@
 
 * Use the built-in [JSON] global object that is available
   in both Node.js and in modern browsers to manipulate JSON.
-* See [nato.js](./nato.js) for an implementation of the JSON handling
+* See [demo.js](./demo.js) for an implementation of the JSON handling
   described in the [JSON Primer].
 * Use [node-fetch] or [axios] for HTTP.
   * **Note**: `node-fetch@>=3` requires using ESM modules. If you are unfamiliar with ESM, use `node-fetch@2`.
@@ -10,7 +10,7 @@
 To run this code with [Node.js]:
 
 ```bash
-./nato.js
+./demo.js
 ```
 
 [JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON

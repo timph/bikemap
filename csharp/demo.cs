@@ -14,11 +14,11 @@ namespace Demo
         // See ../1-json-primer.md for an explanation
         static void handle_json()
         {
-            string json_text = "{\"foo\": {\"bar\": [{\"nato\": \"oscar\"}, {\"nato\": \"papa\"}, {\"nato\": \"quebec\"}]}}";
+            string json_text = "{\"foo\": {\"bar\": [{\"paint\": \"red\"}, {\"paint\": \"green\"}, {\"paint\": \"blue\"}]}}";
             dynamic data = JsonConvert.DeserializeObject(json_text);
 
-            string nato_letter = data.foo.bar[1].nato;  // "papa"
-            Console.WriteLine(nato_letter);
+            string demo_letter = data.foo.bar[1].paint;  // "green"
+            Console.WriteLine(demo_letter);
 
             // data["foo"]["quux"] = {"stuff": "nonsense", "nums": [2.718, 3.142]}
             data.foo.quux = JObject.FromObject(

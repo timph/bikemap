@@ -1,7 +1,7 @@
 # Go
 
 * Use the built-in [encoding/json] package to manipulate JSON.
-* See [nato.go](./nato.go) for an implementation of the JSON handling
+* See [demo.go](./demo.go) for an implementation of the JSON handling
   described in the [JSON Primer].
 * See the [Go blog] for more on using `interface{}` for generic JSON.
 * Use [net/http] for HTTP.
@@ -9,7 +9,7 @@
 To run this code:
 
 ```bash
-go run nato.go
+go run demo.go
 ```
 
 [encoding/json]: https://golang.org/pkg/encoding/json/

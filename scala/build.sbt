@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).
       organization := "com.stripe.interview",
       scalaVersion := "2.13.5"
     )),
-    name := "nato",
+    name := "demo",
     version := "1.0-SNAPSHOT"
   )
 

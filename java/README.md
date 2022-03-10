@@ -27,7 +27,7 @@ To open the project in Eclipse:
 - For "Root Directory" select the `bikemap/java` folder
 - Make sure the project is selected and click "Finish"
 
-After a few moments, the project will appear in the navigator under "nato".
+After a few moments, the project will appear in the navigator under "demo".
 
 ## Using IntelliJ IDEA
 
@@ -39,7 +39,7 @@ To open the project in IntelliJ IDEA:
 - Ensure "Import project from external model" and "Maven" are selected, click Next.
 - You can accept the defaults on the import project dialog. Click Next.
 - Leave the profile unselected. Click Next.
-- The `com.stripe.interview:nato:1.0-SNAPSHOT` project should be selected. If not, select it. Click Next.
+- The `com.stripe.interview:demo:1.0-SNAPSHOT` project should be selected. If not, select it. Click Next.
 - Set Project SDK to JDK 1.8. Click Next.
 - Pick a name for the project or just accept the default. Click Finish.
 

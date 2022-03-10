@@ -23,3 +23,5 @@ tags
 
 /cpp/build
 /cpp/.clangd
+
+/.metals/

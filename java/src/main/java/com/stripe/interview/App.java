@@ -19,16 +19,16 @@ public class App
     // See 1-json-primer.md for an explanation
     public static void handle_json()
     {
-        String json_text = "{\"foo\": {\"bar\": [{\"nato\": \"oscar\"}, {\"nato\": \"papa\"}, {\"nato\": \"quebec\"}]}}";
+        String json_text = "{\"foo\": {\"bar\": [{\"paint\": \"red\"}, {\"paint\": \"green\"}, {\"paint\": \"blue\"}]}}";
         Any data = JsonIterator.deserialize(json_text);
 
         // Use toString(), toDouble(), toInt(), etc with types
-        String natoLetter = data.toString("foo", "bar", 1, "nato");
-        System.out.printf("toString: %s\n", natoLetter); // "papa"
+        String demoLetter = data.toString("foo", "bar", 1, "paint");
+        System.out.printf("toString: %s\n", demoLetter); // "green"
 
         // Or use get() and Any
-        Any natoLetter2 = data.get("foo", "bar", 1, "nato");
-        System.out.printf("Any: %s\n", natoLetter2); // "papa"
+        Any demoLetter2 = data.get("foo", "bar", 1, "paint");
+        System.out.printf("Any: %s\n", demoLetter2); // "green"
 
         // Can also use Map.of for homogenous key-value pairs in Java 9+
         Map<String, Object> quux = new HashMap<>();

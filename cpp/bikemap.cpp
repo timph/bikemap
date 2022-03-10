@@ -6,15 +6,15 @@
 void handle_json() {
     using nlohmann::json;
     // create from string
-    json j = json::parse("{\"foo\": {\"bar\": [{\"nato\": \"oscar\"}, {\"nato\": \"papa\"}, {\"nato\": \"quebec\"}]}}");
+    json j = json::parse("{\"foo\": {\"bar\": [{\"paint\": \"red\"}, {\"paint\": \"green\"}, {\"paint\": \"blue\"}]}}");
 
     // explicit serialization to string
     std::string s = j.dump();
     std::cout << ".dump() " << s << std::endl;
 
     // access specific value using JSON Pointer spec (https://tools.ietf.org/html/rfc6901)
-    auto nato_letter = j["/foo/bar/1/nato"_json_pointer];
-    std::cout << ".get() " << nato_letter.get<std::string>() << std::endl;
+    auto demo_letter = j["/foo/bar/1/paint"_json_pointer];
+    std::cout << ".get() " << demo_letter.get<std::string>() << std::endl;
 
     // create a new json object and add it to the prev one
     json j2;

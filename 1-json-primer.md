@@ -26,9 +26,9 @@ Given this JSON *text*:
 {
     "foo": {
         "bar": [
-            {"nato": "oscar"},
-            {"nato": "papa"},
-            {"nato": "quebec"}
+            {"paint": "red"},
+            {"paint": "green"},
+            {"paint": "blue"}
         ]
     }
 }
@@ -37,17 +37,17 @@ Given this JSON *text*:
 which can also be written on one line as:
 
 ```json
-{"foo": {"bar": [{"nato": "oscar"}, {"nato": "papa"}, {"nato": "quebec"}]}}
+{"foo": {"bar": [{"paint": "red"}, {"paint": "green"}, {"paint": "blue"}]}}
 ```
 
 We want to parse this string into an object called `data`,
 then **extract** a field several levels down:
 
 ```js
-data["foo"]["bar"][1]["nato"]
+data["foo"]["bar"][1]["paint"]
 ```
 
-namely the string value `"papa"`.
+namely the string value `"green"`.
 
 We'll also **construct** a new compound object
 and **add** it as a subobject of `data`:
@@ -62,9 +62,9 @@ which updates the structure to:
 {
     "foo": {
         "bar": [
-            {"nato": "oscar"},
-            {"nato": "papa"},
-            {"nato": "quebec"}
+            {"paint": "red"},
+            {"paint": "green"},
+            {"paint": "blue"}
         ],
         "quux": {
             "stuff": "nonsense",

@@ -1,4 +1,4 @@
-// go run nato.go
+// go run demo.go
 
 package main
 
@@ -14,19 +14,19 @@ func main() {
 
 // See ../1-json-primer.md for an explanation
 func handle_json() {
-	jsonText := `{"foo": {"bar": [{"nato": "oscar"}, {"nato": "papa"}, {"nato": "quebec"}]}}`
+	jsonText := `{"foo": {"bar": [{"paint": "red"}, {"paint": "green"}, {"paint": "blue"}]}}`
 	data := make(map[string]interface{})
 	err := json.Unmarshal([]byte(jsonText), &data)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// data["foo"]["bar"][1]["nato"]
-	natoLetter := data["foo"].
-		(map[string]interface{})["bar"].
-		([]interface{})[1].
-		(map[string]interface{})["nato"]  // "papa"
-	fmt.Printf("%v\n", natoLetter)
+	// data["foo"]["bar"][1]["paint"]
+	demoLetter := data["foo"].
+        (map[string]interface{})["bar"].
+        ([]interface{})[1].
+        (map[string]interface{})["paint"] // "green"
+	fmt.Printf("%v\n", demoLetter)
 
 	// data["foo"]["quux"] = {"stuff": "nonsense", "nums": [2.718, 3.142]}
 	quux := map[string]interface{}{
